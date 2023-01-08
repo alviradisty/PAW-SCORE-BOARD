@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    height: 100%;
+    text-align: center;
+    line-height: 97px;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+h1 {
+    font-size: 100px;
+    cursor: pointer;
+}
+
+.team1 {
+    background-color: #1E1E1E;
+}
+
+.team2 {
+    background-color: #222325;
+}
+
+.score1 {
+    position: absolute;
+    top: 35%;
+    left: 18%;
+}
+
+.score2 {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+}
+
+.team1 .pemain {
+    display: grid;
+    grid-template-columns: 6% 94%;
+}
+
+.team2 .pemain {
+    display: grid;
+    grid-template-columns: 94% 6%;
+}
+
+.team1 .pemain .posisi_pemain {
+    background-color: #FFD600;
+    padding: 6px;
+    color: #1E1E1E;
+    text-align: left;
+}
+
+.team1 .pemain .nama_pemain {
+    background-color: #222325;
+    padding: 6px;
+    line-height: 12px;
+    text-align: left;
+    color: #FFF
+}
+
+.team2 .pemain .posisi_pemain {
+    background-color: #FFD600;
+    padding: 6px;
+    color: #1E1E1E;
+    text-align: center;
+}
+
+.team2 .pemain .nama_pemain {
+    background-color: #222325;
+    padding: 6px;
+    text-align: right;
+    color: #FFF
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width : 468px) {
+    
+
+    .footer {
+        font-size: 10px;
+    }
+
+    .score1 {
+        top: 40%;
+        left: 65%;
+    }
+
+    .score2 {
+        top: 40%;
+        left: 65%;
+    }
+
+    .team1 .pemain {
+        display: grid;
+        grid-template-columns: 13% 87%;
+    }
+
+    .team2 .pemain {
+        display: grid;
+        grid-template-columns: 87% 13%;
+    }
+}
+
+@media only screen 
+  and (max-device-width: 468px) 
+  and (orientation: landscape){
+      
+    .footer {
+        font-size: 10px;
+    }
+
+    .score1 {
+        top: 32%;
+        left: 20%;
+    }
+
+    .score2 {
+        top: 32%;
+        left: 72%;
+    }
+
+    .team1 .pemain {
+        display: grid;
+        grid-template-columns: 13% 87%;
+    }
+
+    .team2 .pemain {
+        display: grid;
+        grid-template-columns: 87% 13%;
+    }
+}
